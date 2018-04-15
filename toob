@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+/**
+ * 应用启动
+ * @AuthorHTL  naka1205
+ * @DateTime  2016-04-13T20:00:01+0800
+ */
+
+
+//初始化配置
+require __DIR__ . '/framework/initialize.php';
+
+!IS_CLI or \framework\lib\Application::command($argv);
+
+
